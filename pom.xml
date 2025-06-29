@@ -6,13 +6,33 @@
 
     <groupId>geometry</groupId>
     <artifactId>geometry-library</artifactId>
-    <version>1.2.0</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
     <modules>
         <module>GeometryUtils</module>
         <module>GeometryCore</module>
         <module>ThreeDimensionalShapes</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>geometry</groupId>
+                <artifactId>geometry-core</artifactId>
+                <version>1.1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>geometry</groupId>
+                <artifactId>geometry-utils</artifactId>
+                <version>1.1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>geometry</groupId>
+                <artifactId>three-dimensional-shapes</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
