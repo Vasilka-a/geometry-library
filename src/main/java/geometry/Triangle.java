@@ -25,4 +25,10 @@ public class Triangle {
     public double getPerimeter() {
         return sideA + sideB + sideC;
     }
+
+    public void displayInfo() {
+        System.out.println("Triangle:");
+        System.out.println("Area: " + getArea());
+        System.out.println("Perimeter: " + getPerimeter());
+    }
 }

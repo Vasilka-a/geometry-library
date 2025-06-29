@@ -17,4 +17,10 @@ public class Circle {
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
+
+    public void displayInfo() {
+        System.out.println("Circle:");
+        System.out.println("Area: " + getArea());
+        System.out.println("Perimeter: " + getPerimeter());
+    }
 }

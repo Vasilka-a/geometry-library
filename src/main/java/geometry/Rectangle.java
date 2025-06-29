@@ -19,4 +19,10 @@ public class Rectangle {
     public double getPerimeter() {
         return 2 * (width + height);
     }
+
+    public void displayInfo() {
+        System.out.println("Rectangle:");
+        System.out.println("Area: " + getArea());
+        System.out.println("Perimeter: " + getPerimeter());
+    }
 }
