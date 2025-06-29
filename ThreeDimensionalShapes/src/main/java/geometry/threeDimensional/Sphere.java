@@ -17,4 +17,10 @@ public class Sphere {
     public double getSurfaceArea() {
         return 4 * Math.PI * radius * radius;
     }
+
+    public void displayInfo(){
+        System.out.println("Sphere: ");
+        System.out.println("Volume: " + getVolume());
+        System.out.println("Surface area: " + getSurfaceArea());
+    }
 }

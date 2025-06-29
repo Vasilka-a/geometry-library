@@ -17,4 +17,10 @@ public class Cube {
     public double getSurfaceArea() {
         return 6 * side * side;
     }
+
+    public void displayInfo(){
+        System.out.println("Cube: ");
+        System.out.println("Volume: " + getVolume());
+        System.out.println("Surface area: " + getSurfaceArea());
+    }
 }

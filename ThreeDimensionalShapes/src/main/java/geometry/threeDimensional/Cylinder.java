@@ -19,4 +19,9 @@ public class Cylinder {
     public double getSurfaceArea() {
         return 2 * Math.PI * radius * (radius + height);
     }
+    public void displayInfo(){
+        System.out.println("Cylinder: ");
+        System.out.println("Volume: " + getVolume());
+        System.out.println("Surface area: " + getSurfaceArea());
+    }
 }
